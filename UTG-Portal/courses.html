@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTG Portal | Courses</title>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxs-graduation'></i>
+      <span class="logo_name">UTG-Protal</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="mail.html">
+            <i class='bx bx-message' ></i>
+            <span class="link_name">Mail</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="mail.html">Mail</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">Outbox</a></li>
+          <li><a href="#">Sent</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="courses.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Courses</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="courses.html">Courses</a></li>
+          <li><a href="#">Running Courses</a></li>
+          <li><a href="#">Registered Courses</a></li>
+          <li><a href="#">Timetable Courses</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="settings.html">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="settings.html">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="assets/imgs/me.png" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Muhammed</div>
+        <div class="job">Student</div>
+      </div>
+      <a href="login.html"><i class='bx bx-log-out'></i></a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"><h1>Courses</h1></span>
+    </div>
+
+      <div class="w3-container">
+      <div class="w3-row">
+        <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Running Courses</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Registered Courses</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Timetable</div>
+        </a>
+      </div>
+
+      <div id="London" class="w3-container city" style="display:none"><br>
+        <center><input class="search-box" type="text" name=""></center><br>
+        <table class="table">
+          <thead>
+            <th>#</th>
+            <th>Code</th>
+            <th>Class-size</th>
+            <th>Lectuer</th>
+            <th>Time</th>
+            <th>Venue</th>
+            <th>Room</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="#">1</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">2</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">3</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">4</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">5</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">6</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">7</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">8</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">9</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+
+            <tr>
+              <td data-label="#">10</td>
+              <td data-label="Code">Pol 101</td>
+              <td data-label="Class-size">45</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Time">Monday 11:00 - 13:30</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Room">Peace SJ201</td>
+              <td data-label="Action"><input class="checkbox" type="checkbox" name=""></td>
+            </tr>
+          </tbody>
+        </table><br>
+      <div class="center">
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">7</a>
+          <a href="#">8</a>
+          <a href="#">9</a>
+          <a href="#">10</a>
+          <a href="#">&raquo;</a> 
+        </div>
+      </div>
+    </div>
+
+    <div id="Paris" class="w3-container city" style="display:none"><br><br>
+        <table class="table">
+          <thead>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Lectuer</th>
+            <th>Venue</th>
+            <th>Start Date</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Course Code">Pol 101</td>
+              <td data-label="Course Name">Introduction to Politics</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Start Date">2021-03-15</td>
+            </tr>
+
+            <tr>
+              <td data-label="Course Code">Pol 101</td>
+              <td data-label="Course Name">Introduction to Politics</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Start Date">2021-03-15</td>
+            </tr>
+
+            <tr>
+              <td data-label="Course Code">Pol 101</td>
+              <td data-label="Course Name">Introduction to Politics</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Start Date">2021-03-15</td>
+            </tr>
+
+            <tr>
+              <td data-label="Course Code">Pol 101</td>
+              <td data-label="Course Name">Introduction to Politics</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Start Date">2021-03-15</td>
+            </tr>
+
+            <tr>
+              <td data-label="Course Code">Pol 101</td>
+              <td data-label="Course Name">Introduction to Politics</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Start Date">2021-03-15</td>
+            </tr>
+
+            <tr>
+              <td data-label="Course Code">Pol 101</td>
+              <td data-label="Course Name">Introduction to Politics</td>
+              <td data-label="Lectuer">Essa Njie</td>
+              <td data-label="Venue">Peace Building</td>
+              <td data-label="Start Date">2021-03-15</td>
+            </tr>
+          </tbody>
+        </table><br>
+
+    </div>
+  </section>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

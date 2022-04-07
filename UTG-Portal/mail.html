@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTG Portal | Mail</title>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxs-graduation'></i>
+      <span class="logo_name">UTG-Protal</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="mail.html">
+            <i class='bx bx-message' ></i>
+            <span class="link_name">Mail</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="mail.html">Mail</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">Outbox</a></li>
+          <li><a href="#">Sent</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="courses.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Courses</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="courses.html">Courses</a></li>
+          <li><a href="#">Running</a></li>
+          <li><a href="#">Registered</a></li>
+          <li><a href="#">Timetable</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="settings.html">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="settings.html">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="assets/imgs/me.png" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Muhammed</div>
+        <div class="job">Student</div>
+      </div>
+      <a href="login.html"><i class='bx bx-log-out'></i></a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"><h1>Mail</h1></span>
+    </div>
+    <div>
+      <div>
+        <center><input class="search-box" type="searchbox" placeholder=""></center><br>
+
+        <div class="w3-container">
+          <div class="w3-row">
+            <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><i id="icon" class='bx bxs-inbox' ></i> Inbox</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><i id="icon" class='bx bx-space-bar'></i> Outbox</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><i id="icon" class='bx bx-send' ></i> Sent</div>
+            </a>
+      </div>
+
+      <div id="London" class="w3-container city" style="display:none"><br>
+        <div class="container">
+        <center><button class="btn-0">Compose</button></center>
+        <br><br>
+        <table class="table table-inbox table-hover">
+          <tbody>
+            <tr class="unread">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message  dont-show">PHPClass</td>
+              <td class="view-message ">Added a new class: Login Class Fast Site</td>
+              <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+              <td class="view-message  text-right">9:27 AM</td>
+            </tr>
+            <tr class="unread">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">Google Webmaster </td>
+              <td class="view-message">Improve the search presence of WebSite</td>
+              <td class="view-message inbox-small-cells"></td>
+              <td class="view-message text-right">March 15</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">JW Player</td>
+              <td class="view-message">Last Chance: Upgrade to Pro for </td>
+              <td class="view-message inbox-small-cells"></td>
+              <td class="view-message text-right">March 15</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">Tim Reid, S P N</td>
+              <td class="view-message">Boost Your Website Traffic</td>
+              <td class="view-message inbox-small-cells"></td>
+              <td class="view-message text-right">April 01</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">Freelancer.com <span class="label label-danger pull-right">urgent</span></td>
+              <td class="view-message">Stop wasting your visitors </td>
+              <td class="view-message inbox-small-cells"></td>
+              <td class="view-message text-right">May 23</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">WOW Slider </td>
+              <td class="view-message">New WOW Slider v7.8 - 67% off</td>
+              <td class="view-message inbox-small-cells"><i class='bx bx-paperclip'></i></td>
+              <td class="view-message text-right">March 14</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">LinkedIn Pulse</td>
+              <td class="view-message">The One Sign Your Co-Worker Will Stab</td>
+              <td class="view-message inbox-small-cells"><i class='bx bx-paperclip'></i></td>
+              <td class="view-message text-right">Feb 19</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">Drupal Community<span class="label label-success pull-right">megazine</span></td>
+              <td class="view-message view-message">Welcome to the Drupal Community</td>
+              <td class="view-message inbox-small-cells"></td>
+              <td class="view-message text-right">March 04</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></i></td>
+              <td class="view-message dont-show">Facebook</td>
+              <td class="view-message view-message">Somebody requested a new password </td>
+              <td class="view-message inbox-small-cells"></td>
+              <td class="view-message text-right">June 13</td>
+            </tr>
+            <tr class="">
+              <td class="inbox-small-cells">
+                <input type="checkbox" class="mail-checkbox">
+              </td>
+              <td class="inbox-small-cells"><i class='bx bx-star'></i></td>
+              <td class="view-message dont-show">Skype <span class="label label-info pull-right">family</span></td>
+              <td class="view-message view-message">Password successfully changed</td>
+              <td class="view-message inbox-small-cells"></td>
+              <td class="view-message text-right">March 24</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
